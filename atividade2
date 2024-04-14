@@ -1,0 +1,39 @@
+O código apresentafo tem um problema com a leitura da variável 'nome' usando o objeto 'Scanner'. Para corrigir esse problema, pode adicionar uma chamada adicional a 'scanner.nextLine()' após ler idade e peso para consumir a quebra de linha pendente antes de ler nome. 
+
+
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        // Declarando as variáveis
+        String nome = "";
+        int idade = 0;
+        double peso = 0.0;
+        
+        // Criando um objeto Scanner para ler a entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitando os dados ao usuário
+        System.out.println("Informe seus dados:  ");
+        
+        // Lendo a idade
+        idade = scanner.nextInt();
+        
+        // Lendo o peso
+        peso = scanner.nextDouble();
+        
+        // Adicionando esta linha para consumir a quebra de linha pendente
+        scanner.nextLine(); // Consumir a quebra de linha após a entrada do peso
+        
+        // Lendo o nome
+        nome = scanner.nextLine();
+        
+        // Fechando o objeto Scanner
+        scanner.close();
+        
+        // Exibindo os dados inseridos
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Peso: " + peso);
+    }
+}
