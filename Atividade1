@@ -1,0 +1,192 @@
+1-import java.util.Date;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Tipos primitivos
+        int idade = 25; // Inteiro
+        double salario = 5500.75; // Ponto flutuante (double)
+        boolean estaEmFerias = false; // Booleano
+        char letraInicialDoNome = 'J'; // Caractere
+        float altura = 1.75f; // Ponto flutuante (float)
+
+        // Tipos de referência
+        String nomeCompleto = "Maria"; // String
+        Integer quantidadeDeDependentes = 3; // Wrapper para inteiro
+        Double saldoContaCorrente = 1540.25; // Wrapper para double
+        Boolean possuiCarro = true; // Wrapper para booleano
+        Date dataNascimento = new Date(); // Objeto Date
+
+        // Exibindo as variáveis
+        System.out.println("Idade: " + idade);
+        System.out.println("Salário: " + salario);
+        System.out.println("Está em férias: " + estaEmFerias);
+        System.out.println("Letra inicial do nome: " + letraInicialDoNome);
+        System.out.println("Altura: " + altura);
+        System.out.println("Nome completo: " + nomeCompleto);
+        System.out.println("Quantidade de dependentes: " + quantidadeDeDependentes);
+        System.out.println("Saldo conta corrente: " + saldoContaCorrente);
+        System.out.println("Possui carro: " + possuiCarro);
+        System.out.println("Data de nascimento: " + dataNascimento);
+    }
+}
+
+-------------------------------------
+
+2-public class Produto {
+    public static void main(String[] args) {
+
+        // Variáveis corrigidas com a convenção camelCase
+        String nomeProduto = "Produto X";
+        double precoProduto = 29.99;
+        String marcaDoProduto = "Marca Y";
+        int quantidadeProduto = 100;
+        String descricaoProduto = "Descrição do produto";
+        int numeroProduto = 123;
+        double precoDoProduto = 29.99; // Já estava em camelCase
+        int estoqueDisponivel = 1000;
+        int totalDeProdutos = 1000;
+
+        // Exibir variáveis
+        System.out.println("Nome do produto: " + nomeProduto);
+        System.out.println("Preço do produto: " + precoProduto);
+        System.out.println("Marca do produto: " + marcaDoProduto);
+        System.out.println("Quantidade do produto: " + quantidadeProduto);
+        System.out.println("Descrição do produto: " + descricaoProduto);
+        System.out.println("Número do produto: " + numeroProduto);
+        System.out.println("Preço do produto: " + precoDoProduto);
+        System.out.println("Estoque disponível: " + estoqueDisponivel);
+        System.out.println("Total de produtos: " + totalDeProdutos);
+    }
+}
+
+-----------------------------------
+
+3-public class DadosAluno {
+    public static void main(String[] args) {
+
+        // Declarando variáveis com tipos de dados apropriados
+
+        String nomeAluno = "João"; 
+        int idadeAluno = 18;
+        double notaProva1 = 8.5; 
+        double notaProva2 = 7.3; 
+        double mediaFinal = (notaProva1 + notaProva2) / 2; 
+
+        System.out.println("Nome do Aluno: " + nomeAluno);
+        System.out.println("Idade do Aluno: " + idadeAluno);
+        System.out.println("Nota da Prova 1: " + notaProva1);
+        System.out.println("Nota da Prova 2: " + notaProva2);
+        System.out.println("Média Final: " + mediaFinal);
+    }
+}
+
+--------------------------------------
+
+4-public class ControleEstoque {
+    public static void main(String[] args) {
+
+        String nomeProduto = "Produto X";
+        String categoriaProduto = "Alimentos"; 
+        double precoUnitarioProduto = 5.99; 
+        int quantidadeEstoque = 100; 
+
+        System.out.println("Nome do produto: " + nomeProduto);
+        System.out.println("Categoria do produto: " + categoriaProduto);
+        System.out.println("Preço unitário do produto: " + precoUnitarioProduto);
+        System.out.println("Quantidade em estoque: " + quantidadeEstoque);
+    }
+}
+
+-----------------------------------
+
+5-public class EstoqueEletronicos {
+    public static void main(String[] args) {
+
+        // Smartphone
+        String nomeSmartphone = "Galaxy S21";
+        String marcaSmartphone = "Samsung";
+        double precoSmartphone = 2999.99;
+        int quantidadeSmartphone = 50;
+
+        // Laptop
+        String nomeLaptop = "MacBook Air";
+        String marcaLaptop = "Apple";
+        double precoLaptop = 8999.99;
+        int quantidadeLaptop = 20;
+
+        // Fone de Ouvido Bluetooth
+        String nomeFoneBluetooth = "AirPods Pro";
+        String marcaFoneBluetooth = "Apple";
+        double precoFoneBluetooth = 1299.99;
+        int quantidadeFoneBluetooth = 100;
+
+        // Exibindo os dados de cada produto
+        System.out.println("Dados do Smartphone:");
+        System.out.println("Nome: " + nomeSmartphone);
+        System.out.println("Marca: " + marcaSmartphone);
+        System.out.println("Preço: " + precoSmartphone);
+        System.out.println("Quantidade em estoque: " + quantidadeSmartphone);
+        System.out.println(); // Linha em branco para separar os produtos
+
+        System.out.println("Dados do Laptop:");
+        System.out.println("Nome: " + nomeLaptop);
+        System.out.println("Marca: " + marcaLaptop);
+        System.out.println("Preço: " + precoLaptop);
+        System.out.println("Quantidade em estoque: " + quantidadeLaptop);
+        System.out.println(); // Linha em branco para separar os produtos
+
+        System.out.println("Dados do Fone de Ouvido Bluetooth:");
+        System.out.println("Nome: " + nomeFoneBluetooth);
+        System.out.println("Marca: " + marcaFoneBluetooth);
+        System.out.println("Preço: " + precoFoneBluetooth);
+        System.out.println("Quantidade em estoque: " + quantidadeFoneBluetooth);
+    }
+}
+
+----------------------------------------
+
+6-public class Main {
+    public static void main(String[] args) {
+
+        // Corrigindo tipo de dado do número do produto
+        String numeroProduto = "ABC123"; 
+        
+        // Mantendo o tipo de dado correto para o preço do produto
+        double precoProduto = 25.00; 
+        
+        // Inicializando a descrição do produto
+        String descricaoProduto = "Fone de ouvido Bluetooth";
+        
+        // Exibindo a descrição do produto
+        System.out.println("Descrição do Produto: " + descricaoProduto);
+        
+        // Exibindo os dados do produto
+        System.out.println("Dados do Produto:");
+        System.out.println("Número: " + numeroProduto); // Corrigindo o nome da variável
+        System.out.println("Preço: $" + precoProduto);
+        System.out.println("Descrição: " + descricaoProduto);
+    }
+}
+
+--------------------------------------
+
+7-public class ControleEstoque {
+    public static void main(String[] args) {
+
+        // Declaração e inicialização de variáveis com tipos de dados corretos
+        String nomeProduto = "Fone de Ouvido";
+        double precoProduto = 29.99; // O preço é um valor decimal
+        int quantidadeProduto = 10; // A quantidade é um número inteiro
+        
+        // Corrigindo a variável marcaProduto para um valor do tipo String
+        String marcaProduto = "MarcaX";
+
+        // Exibindo os dados do produto
+        System.out.println("Dados do Produto:");
+        System.out.println("Nome: " + nomeProduto);
+        System.out.println("Marca: " + marcaProduto);
+        System.out.println("Preço: $" + precoProduto);
+        System.out.println("Quantidade em estoque: " + quantidadeProduto);
+    }
+}
